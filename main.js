@@ -16,6 +16,7 @@ let scoreHide = true
 let rulehide = true
 document.querySelector("#scores-btn").addEventListener('click', () => {
     document.querySelector(".scores-overlay").classList.add("show")
+    
     document.querySelector('.close-btn').addEventListener('click', ()=>{
       document.querySelector(".scores-overlay").classList.remove("show")
       scoreHide = !scoreHide

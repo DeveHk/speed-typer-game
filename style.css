@@ -219,7 +219,7 @@ transition: all 0.2s;
 }
 
 .game{
-  height: 80vh;
+  height: 85vh;
   width: 100vw;
   display: flex;
   justify-content: center;
