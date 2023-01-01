@@ -242,12 +242,11 @@ transition: all 0.2s;
   align-items: center;
 }
 .game-card{
-  height: 60vh;
   max-width:500px;
   width: 70%;
   box-shadow: 0 0 10px black;
   border-radius: 5%;
-  padding: 20px;
+  padding: 30px 20px 50px 20px;
 }
 .game-title{
   font-size: 3rem;
