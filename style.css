@@ -180,12 +180,7 @@ transition: all 0.2s;
   padding-top: 1rem;
 }
 
-.scores-card {
-  width: 50vw;
-  left: 25vw;
-  height: 40vh;
-  top: 30vh;
-}
+
 
 .rules-head,
 .scores-head {
