@@ -81,15 +81,15 @@
           <div class="score-item score-item-head">Difficulty</div>
           <div class="score-item score-item-head">Score</div>
           <div class="score-item score-item-head">Date</div>
-          <div class="score-item">Easy</div>
-          <div class="score-item">0</div>
-          <div class="score-item">-</div>
-          <div class="score-item">Medium</div>
-          <div class="score-item">0</div>
-          <div class="score-item">-</div>
+          <div class="score-item ">Easy</div>
+          <div class="score-item easy">0</div>
+          <div class="score-item easy-Date">-</div>
+          <div class="score-item ">Medium</div>
+          <div class="score-item medium">0</div>
+          <div class="score-item medium-Date">-</div>
           <div class="score-item">Hard</div>
-          <div class="score-item">0</div>
-          <div class="score-item">-</div>
+          <div class="score-item hard">0</div>
+          <div class="score-item hard-Date">-</div>
         </div>
       </div>
     </div>
@@ -108,12 +108,22 @@
 
       <div class="game-view">
         <div class="game-statement">Type the word!</div>
-        <div class="game-word">asd</div>
-        <input type="text" class="game-input" placeholder="type here..">
+        <div class="game-word">_____</div>
+        <input type="text" class="game-input" placeholder="type here.." disabled>
         <button class="game-start">Start Game</button>
       </div>
 
     </div>
+    <div class="game-over-overlay">
+    <div class="game-over game-card show">
+      <div class="game-title">GAME OVER</div>
+      <div class="game-score">You Scored:
+        <div class="game-scorer">0</div>
+      </div>
+      <button class="game-start again">Start Again</button>
+    </div>
+  </div>
+
   </section>
     <script type="module" src="./main.js"></script>
   </body>
