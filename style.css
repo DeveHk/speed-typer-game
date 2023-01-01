@@ -1,0 +1,279 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #2C3E50;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+select,.btn {
+  display: block;
+  border-radius: 5px;
+  padding: 0.75rem;
+  border: 0;
+  margin: 0.5rem auto;
+  font-size: 1.2rem;
+}
+input:focus,
+select:focus {
+  outline: 0;
+}
+select:hover {
+  cursor: pointer;
+}
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.nav{
+  background-color: #182531;
+  height: 10vh;
+  width: 100vw;
+  box-shadow:0px 0px 10px  black; ;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  
+}
+.nav-none{
+  transform: translateY(-90%);
+}
+.nav-sec{
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px 0 100px;
+}
+.levels{
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.levels p {
+  margin-right: 0.6rem;
+  font-size: 1.3rem;
+}
+
+.levels select {
+  background-color: #a7c5e3;
+  width: 200px;
+  appearance: none;
+  padding: 0.3rem 1rem;
+  font-size: 1.4rem;
+  color: #182531;
+}
+.levels option:hover{
+  background-color: #0969ca;
+}
+.option{
+  height: 5vh;
+  outline: none;
+}
+.btns{
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  height: 7vh;
+}
+.nav-btn{
+color: white;
+width: 50px;
+transition: all 0.2s;
+}
+.nav-btn:hover{
+  transform: scale(1.1);
+}
+.nav-hide{
+  position: absolute;
+  bottom: -30px;
+  background-color:#182531 ;
+  width: 50px;
+  height: 30px;
+  border-radius: 0 0 20% 20%;
+  text-align: center;
+  font-size: 1.7rem;
+  transition: transform 0.2;
+}
+.nav-hide-rot i{
+  transform: rotate(0.5turn);
+}
+
+
+.rules-overlay,
+.scores-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+
+.rules-overlay.show,.scores-overlay.show
+{
+  display: block;
+}
+
+.rules-card,
+.scores-card {
+  position: absolute;
+  width: 80vw;
+  left: 10vw;
+  height: 60vh;
+  top: 20vh;
+  background-color: #10151f;
+  color: #fff;
+  border-radius: 10px;
+  padding-top: 1rem;
+}
+
+.scores-card {
+  width: 50vw;
+  left: 25vw;
+  height: 40vh;
+  top: 30vh;
+}
+
+.rules-head,
+.scores-head {
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  right: 8vw;
+  top: 3vh;
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+  font-size: 2rem;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+}
+
+.rules-body p {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.rules-body p:nth-of-type(3) {
+  text-decoration: underline;
+}
+
+.scores-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 10vw;
+  width: 80%;
+  margin-top: 1rem;
+}
+
+.score-item {
+  margin-bottom: 0.6rem;
+}
+
+.score-item-head {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.game{
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-card{
+  height: 50vh;
+  max-width:500px;
+  width: 70%;
+  box-shadow: 0 0 10px black;
+  border-radius: 5%;
+  padding: 20px;
+}
+.game-title{
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: #182531;
+  padding: 30px;
+  border-radius:15px;
+}
+.game-stat{
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  margin:25px;
+}
+
+.game-view{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ height: 30vh;
+}
+.game-statement{
+  font-size: 2.2rem;
+  margin-top: 20px;
+}
+.game-word{
+  font-size: 2rem;
+  margin-top: 10px;
+}
+.game-input{
+  background-color:#6C7B8A ;
+  width: 60%;
+  height: 4vh;
+  margin-top: 20px;
+  font-size: 1.6rem;
+}
+.game-start{
+  width: 40%;
+  height: 7vh;
+  font-size: 1.8rem;
+  border-radius: 20px;
+  margin-top: 10px;
+  background-color: #28A745;
+}
