@@ -112,7 +112,7 @@ const udateCount = function () {
 }
 
 const inputGame = function () {
-  if (gameInput.value == word) {
+  if (gameInput.value.toLowerCase() == word) {
     score++
     udateCount()
     gameInput.value = ''

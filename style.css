@@ -320,6 +320,8 @@ transition: all 0.2s;
 }
 .game-over .game-title{
   width: 80%;
+  margin-top: 10px;
+  font-size: 2rem;
   background-color: #e63946;
   box-shadow: 0 0 5px #f4a261 ;
 }
